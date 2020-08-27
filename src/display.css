@@ -1,0 +1,10 @@
+#Mycontainer{
+ background-color: yellow;  
+ width:30%;
+ padding-left: 20px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+span{
+    padding:5px
+}
