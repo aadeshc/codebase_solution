@@ -5,7 +5,10 @@ import ReusableDDL from './ReusableDDL'
 export default class WorkingSolution extends Component {
     constructor(props) {
         super(props)
-
+        this.Obj = {
+            Value: "Aadesh",
+            ID: 4
+        }
         this.countryArray = ["India", "Japan", "China", "USA", "Russia"]
         this.employeeList = [{
             ID: 1,
@@ -40,6 +43,7 @@ export default class WorkingSolution extends Component {
                 <ReusableDDL ID="ddlArray" data={this.countryArray} onChange={(e) => { this.customonChange(e) }} />
                 <ReusableDDL ID="ddlArray" data={this.employeeList} onChange={(e) => { this.customonChange(e) }} />
                 <ReusableDDL ID="ddlArray" data="Aadesh" onChange={(e) => { this.customonChange(e) }} />
+                <ReusableDDL ID="ddlArray" data={this.Obj} onChange={(e) => { this.customonChange(e) }} />
             </div>
 
         )
